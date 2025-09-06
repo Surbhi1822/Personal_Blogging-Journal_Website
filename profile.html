@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>YourStory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+
+    <div class="header">
+        <div class="pimg">
+            <img src="icon.png" height="80px" width="90px">
+            <p class="tag">Your Imagination</p>
+        </div>
+        <div class="pid">
+            <h2>Welcome <script>document.write(localStorage.getItem("name"))</script></h2>
+            <h3>User Id: <script>document.write(localStorage.getItem("userid"))</script></h3>
+        </div>
+        <div class="logout">
+            <button onclick="logout()" class="btn">Logout</button>
+        </div>
+    </div>
+
+    <div class="profile">
+        <p id="date">
+            <!-- date -->
+        </p>
+        <!-- <label class="date" for="date">Date</label>
+        <input type="date" id="date" name="date"> -->
+        <input id="head" type="text" placeholder="Heading"> 
+        <textarea id="text" name="text" rows="15" cols="200" placeholder="Your Today's Thought..."></textarea>
+    </div>
+    <div class="button">
+        <button type="submit" class="btn" style="margin-left: 1200px;" onclick="show()">Show my blog</button>
+        <button type="submit" class="btn" style="margin-left: 20px;" onclick="post()">Add blog</button>
+    </div>
+    <!-- <h2 style="background-color: red; text-align: center; color: white;">My Stories</h2> -->
+    <div class="output">
+        <!-- Stories -->
+    </div>
+    <div id="test">
+        
+    </div>
+    
+    <div class="footer">
+        <div class="fimg">
+            <img src="icon.png" height="90px" width="100px">
+            <p class="tag">Your Imagination</p>
+        </div>
+        <div class="foot" style="margin-left: 130px;">
+            <h4>STORIES</h4>
+            <p>Fun Stoies<br>Emotional Stories<br>Scary Stories<br>Thriller Stories</p>
+        </div>
+        <div class="foot">
+            <h4>ABOUT US</h4>
+            <p>Contacts<br>Privacy Policy</p>
+        </div>
+        <div class="foot">
+            <h4>SOCIAL MEDIA</h4>
+            <div class="ft">
+                <div class="ic">
+                    <img src="icon.png" width="22px" height="22px">
+                </div>
+                <div class="ic">
+                    <img src="wp.png" width="22px" height="22px">
+                </div>
+                <div class="ic">
+                    <img src="inst.png" width="22px" height="22px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

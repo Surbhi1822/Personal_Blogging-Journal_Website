@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>YourStory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+
+    <div class="header">
+        <div class="sub">
+            <a href="index.html" target="_parent"><span style="margin-left: 380px;">Home</span></a>
+        </div>
+        <div class="sub">
+            <a href="about.html" target="main"><p>About</p></a>
+        </div>
+        <div class="sub">
+            <a href="contact.html" target="main"><p>Contact Us</p></a>
+        </div>
+        <div class="sub sub2">
+            <a href="index.html" target="_parent"><img src="icon.png" height="80px" width="90px"></a>
+            <p class="tag">Your Imagination</p>
+        </div>
+        <div class="sub sub1">
+            <a href="login.html" target="main"><p>Login</p></a>
+        </div>
+        <div class="sub">
+            <a href="signup.html" target="main"><p>Sign Up</p></a>
+        </div>
+    </div>
+    
+    <h2 style="text-align: center; margin-bottom: 8px;">Hola New Member!!</h2>
+    <div class="form" style="margin-left: 400px; background-color: 	rgb(255,0,255,0.1); padding-bottom: 10px;">
+
+        <h3 style="background-color: rgb(255,192,203,0.9); margin-top: 0px; padding: 4px;">Sign Up</h3>
+
+        <form class="log" onsubmit="submission(event)">
+            <div>
+                <label class="labels" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="abc" required>
+            </div>
+            <div>
+                <label class="labels" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="abc@mail.com" required>
+            </div>
+            <div>
+                <label class="labels" for="number">Contact Number</label>
+                <input type="number" id="number" name="number" placeholder="123" required>
+            </div>
+            <div>
+                <label class="labels" for="userid">User Id</label>
+                <input type="text" id="userid" name="userid" placeholder="abc" required>
+            </div>
+            <div>
+                <label class="labels" for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="***" required>
+            </div>
+            <div>
+                <label class="labels" for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" name="cpassword" placeholder="***" required>
+            </div>
+            <div style="margin-top: 20px;">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="footer">
+        <div class="fimg">
+            <a href="index.html" target="_parent"><img src="icon.png" height="90px" width="100px"></a>
+            <p class="tag">Your Imagination</p>
+        </div>
+        <div class="foot" style="margin-left: 130px;">
+            <h4>STORIES</h4>
+            <p>Fun Stoies<br>Emotional Stories<br>Scary Stories<br>Thriller Stories</p>
+        </div>
+        <div class="foot">
+            <h4>ABOUT US</h4>
+            <p>Contacts<br>Privacy Policy</p>
+        </div>
+        <div class="foot">
+            <h4>SOCIAL MEDIA</h4>
+            <div class="ft">
+                <div class="ic">
+                    <img src="icon.png" width="22px" height="22px">
+                </div>
+                <div class="ic">
+                    <img src="wp.png" width="22px" height="22px">
+                </div>
+                <div class="ic">
+                    <img src="inst.png" width="22px" height="22px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
